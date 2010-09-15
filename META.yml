@@ -1,25 +1,28 @@
 --- #YAML:1.0
 name:               Acme-CPANAuthors-Booking
-version:            2010091101
+version:            2010091501
 abstract:           Booking.com CPAN authors
 author:
     - Abigail <cpan@abigail.be>
 license:            mit
 distribution_type:  module
 configure_requires:
+    Acme::CPANAuthors:    0
     ExtUtils::MakeMaker:  0
     strict:               0
     Test::More:           0.88
     warnings:             0
 build_requires:
+    Acme::CPANAuthors:    0
     ExtUtils::MakeMaker:  0
     strict:               0
     Test::More:           0.88
     warnings:             0
 requires:
-    perl:      5.006
-    strict:    0
-    warnings:  0
+    Acme::CPANAuthors::Register:  0
+    perl:                 5.006
+    strict:               0
+    warnings:             0
 resources:
     repository:  git://github.com/Abigail/Acme--CPANAuthors--Booking.git
 no_index:
@@ -32,6 +35,7 @@ meta-spec:
     version:  1.4
 keywords:  []
 test_requires:
-    strict:      0
-    Test::More:  0.88
-    warnings:    0
+    Acme::CPANAuthors:  0
+    strict:             0
+    Test::More:         0.88
+    warnings:           0
