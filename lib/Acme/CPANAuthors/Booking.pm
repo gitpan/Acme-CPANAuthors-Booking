@@ -5,11 +5,12 @@ use strict;
 use warnings;
 no  warnings 'syntax';
 
-our $VERSION = '2010092001';
+our $VERSION = '2010101701';
 
 use Acme::CPANAuthors::Register (
     ABIGAIL       =>   "Abigail",
     ANDY          =>   "Andrew Shitov",
+    AVAR          =>   "\x{C6}var Arnfj\x{F6}r\x{F0} Bjarmason",
     BLOM          =>   "Menno Blom",
     BOOK          =>   "Philippe Bruhat (BooK)",
     BRUNORC       =>   "Bruno Czekay",
@@ -21,7 +22,7 @@ use Acme::CPANAuthors::Register (
     IZUT          =>   "Igor Sutton",
     JANUS         =>   "Simon Bertrang",
     JGDA          =>   "Jonas Galhordas Duarte Alves",
-    JOUKE         =>   "Jouke Visser",
+    JGOFF         =>   "Jeff Goff",
 #   MEGA          =>   "Cristina Martins Nunes",  # ID exists, but no modules
     MSILVA        =>   "Mario Silva",
     NEVES         =>   "Marco Neves",
