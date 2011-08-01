@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Acme-CPANAuthors-Booking
-version:            2011052101
+version:            2011080101
 abstract:           Booking.com CPAN authors
 author:
     - Abigail <cpan@abigail.be>
