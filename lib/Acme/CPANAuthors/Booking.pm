@@ -5,7 +5,7 @@ use strict;
 use warnings;
 no  warnings 'syntax';
 
-our $VERSION = '2012050801';
+our $VERSION = '2012052501';
 
 use Acme::CPANAuthors::Register (
     ABIGAIL       =>   "Abigail",
@@ -19,8 +19,8 @@ use Acme::CPANAuthors::Register (
     CAIO          =>   "Caio Rom\x{E3}o Costa Nascimento",
     GGOUDSMIT     =>   "Gilion Goudsmit",
     DMOR          =>   "David Morel",
-    ELIZABETH     =>   "Elizabeth Mattijsen",
     FGLOCK        =>   "Fl\x{E1}vio Soibelmann Glock",
+    GUGOD         =>   "\x{5289}\x{5EB7}\x{6C11} (Liu Kang Min)",
     IZUT          =>   "Igor Sutton",
     JANUS         =>   "Simon Bertrang",
     JGDA          =>   "Jonas Galhordas Duarte Alves",
@@ -31,7 +31,6 @@ use Acme::CPANAuthors::Register (
     MSILVA        =>   "Mario Silva",
     MVUETS        =>   "Maxim Vuets",
     NEVES         =>   "Marco Neves",
-    NFERRAZ       =>   "Nelson Ferraz",
     NPEREZ        =>   "Nicholas Perez",
     POTYL         =>   "Emmanuel Rodriguez",
     RGARCIA       =>   "Rafa\x{EB}l Garcia-Suarez",
