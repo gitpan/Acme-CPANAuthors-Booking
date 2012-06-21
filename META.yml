@@ -33,7 +33,7 @@ requires:
   warnings: 0
 resources:
   repository: git://github.com/Abigail/Acme--CPANAuthors--Booking.git
-version: 2012052501
+version: 2012062101
 x_test_requires:
   Acme::CPANAuthors: 0
   Test::More: 0.88
