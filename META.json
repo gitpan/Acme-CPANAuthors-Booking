@@ -1,7 +1,7 @@
 {
    "abstract" : "Booking.com CPAN authors",
    "author" : [
-      "Abigail <cpan@abigail.be>"
+      "Philippe Bruhat (BooK) <book@cpan.org>"
    ],
    "dynamic_config" : 1,
    "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.133380",
@@ -51,10 +51,10 @@
    "release_status" : "stable",
    "resources" : {
       "repository" : {
-         "url" : "git://github.com/Abigail/Acme--CPANAuthors--Booking.git"
+         "url" : "http://github.com/book/Acme-CPANAuthors-Booking.git"
       }
    },
-   "version" : "2014031501",
+   "version" : "2014031502",
    "x_test_requires" : {
       "Acme::CPANAuthors" : 0,
       "Test::More" : 0.88,

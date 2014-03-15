@@ -1,7 +1,7 @@
 ---
 abstract: 'Booking.com CPAN authors'
 author:
-  - 'Abigail <cpan@abigail.be>'
+  - 'Philippe Bruhat (BooK) <book@cpan.org>'
 build_requires:
   Acme::CPANAuthors: 0
   ExtUtils::MakeMaker: 0
@@ -32,8 +32,8 @@ requires:
   strict: 0
   warnings: 0
 resources:
-  repository: git://github.com/Abigail/Acme--CPANAuthors--Booking.git
-version: 2014031501
+  repository: http://github.com/book/Acme-CPANAuthors-Booking.git
+version: 2014031502
 x_test_requires:
   Acme::CPANAuthors: 0
   Test::More: 0.88
