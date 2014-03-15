@@ -5,10 +5,9 @@ use strict;
 use warnings;
 no  warnings 'syntax';
 
-our $VERSION = '2012062101';
+our $VERSION = '2014031501';
 
 use Acme::CPANAuthors::Register (
-    ABIGAIL       =>   "Abigail",
     AVAR          =>   "\x{C6}var Arnfj\x{F6}r\x{F0} Bjarmason",
     BLHOTSKY      =>   "Brad Lhotsky",
     BLOM          =>   "Menno Blom",
@@ -18,37 +17,56 @@ use Acme::CPANAuthors::Register (
     BURAK         =>   "Burak G\x{FC}rsoy",
     CADAVIS       =>   "Chad A. Davis",
     CAIO          =>   "Caio Rom\x{E3}o Costa Nascimento",
+#   CANECA        =>   "Matheus Victor Brum Soares", # ID exists, but no modules
+#   CHE           =>   "Andrey Shpachenko",
+    DAMOG         =>   "David Moreno",
+    DAMS          =>   "Damien Krotkine",
     DEEPAKG       =>   "Deepak Gulati",
-    GGOUDSMIT     =>   "Gilion Goudsmit",
     DMOR          =>   "David Morel",
     FGLOCK        =>   "Fl\x{E1}vio Soibelmann Glock",
+#   FREEMANSR     =>   "Mihajlo An\x{0111}elkovi\x{0107}", # ID exists, but no modules
+    GGOUDSMIT     =>   "Gilion Goudsmit",
+    GRBHAT        =>   "Gurunandan Bhat",
     GUGOD         =>   "\x{5289}\x{5EB7}\x{6C11} (Liu Kang Min)",
+    HERALDB       =>   "Herald van der Breggen",
+    HINRIK        =>   "Hinrik \x{D6}rn Sigur\x{F0}sson",
 #   HPETERS       =>   "Huub Peters",             # ID exists, but no modules
 #   IFTEKHAR      =>   "Iftekharul Haque",        # ID exists, but no modules
-    IZUT          =>   "Igor Sutton",
+#   IKRUGLOV      =>   "Ivan Kruglov",            # ID exists, but no modules
+#   JACKDOE       =>   "Borislav Nikolov",        # ID exists, but no modules
+#   JALEVIN       =>   "Jospeh A. Levin",         # ID exists, but no modules
     JANUS         =>   "Simon Bertrang",
     JGDA          =>   "Jonas Galhordas Duarte Alves",
+    KOMAROV       =>   "Oleg Komarov",
+#   MALANDER      =>   "Ryan Bastic",             # ID exists, but no modules
     MATTK         =>   "Matt Koscica",
-#   MEGA          =>   "Cristina Martins Nunes",  # ID exists, but no modules
+    MBARBON       =>   "Mattia Barbon",
     MET           =>   "Quim Rovira",
     MSANTOS       =>   "Marco Santos",
     MSILVA        =>   "Mario Silva",
     MVUETS        =>   "Maxim Vuets",
     NEVES         =>   "Marco Neves",
     NPEREZ        =>   "Nicholas Perez",
+#   PJIRAK        =>   "Peter Jirak",             # ID exists, but no modules
     POTYL         =>   "Emmanuel Rodriguez",
     RGARCIA       =>   "Rafa\x{EB}l Garcia-Suarez",
-    RHOELZ        =>   "Rob Hoelz",
     SEVEAS        =>   "Dennis Kaarsemaker",
 #   SILVAN        =>   "Silvan Kok",              # ID exists, but no modules
     SLANNING      =>   "Scott Lanning",
     SMUELLER      =>   "Steffen M\x{FC}ller",
+#   STEFANB       =>   "Stefan Boronea",          # ID exists, but no modules
     STRANGE       =>   "Luciano Miguel Ferreira Rocha",
+    SYP           =>   "\x{0421}\x{0442}\x{0430}\x{043D}\x{0438}\x{0441}\x{043B}\x{0430}\x{0432} \x{041F}\x{0443}\x{0441}\x{0435}\x{043F}",
+    TJMC          =>   "Tomasz Czepiel",
+#   VMIKULIC      =>   "Vedran Mikulic",          # ID exists, but no modules
     XANT          =>   "Andrea Guzzo",
+    XSAWYERX      =>   "Sawyer X",
+    YKO           =>   "\x{042F}\x{0440}\x{043E}\x{0441}\x{043B}\x{0430}\x{0432} \x{041A}\x{043E}\x{0440}\x{0448}\x{0430}\x{043A}",
     YVES          =>   "Yves",
+    YURAN         =>   "Yury Nevinitsin",
 );
 
-1;
+14656;
 
 __END__
 
@@ -64,17 +82,17 @@ Acme::CPANAuthors::Booking - Booking.com CPAN authors
 
  my $number   = $authors -> count;
  my @ids      = $authors -> id;
- my @distros  = $authors -> distributions ("ABIGAIL");
- my $url      = $authors -> avatar_url    ("ABIGAIL");
- my $kwalitee = $authors -> kwalitee      ("ABIGAIL");
- my $name     = $authors -> name          ("ABIGAIL");
-        
-See documentation for Acme::CPANAuthors for more details.
+ my @distros  = $authors -> distributions ("BOOK");
+ my $url      = $authors -> avatar_url    ("BOOK");
+ my $kwalitee = $authors -> kwalitee      ("BOOK");
+ my $name     = $authors -> name          ("BOOK");
+
+See documentation for L<Acme::CPANAuthors> for more details.
  
 =head1 DESCRIPTION
 
 This class provides a hash of Booking.com CPAN authors' PAUSE ID and name to
-the C<< Acme::CPANAuthors >> module.
+the L<Acme::CPANAuthors> module.
 
 =head1 BUGS
 
@@ -82,24 +100,29 @@ As soon as Booking.com hires a new CPAN author, this module is out of date.
 
 =head1 COMMERCIAL BREAK
 
-Booking.com is hiring. Send your resume to L<< mailto:cpan@abigail.be >>
+Booking.com is hiring. Send your resume to L<< mailto:work@booking.com >>
 if you are interested.
 
 =head1 DEVELOPMENT
 
 The current sources of this module are found on github,
-L<< git://github.com/Abigail/Acme--CPANAuthors--Booking.git >>.
+L<git://github.com/book/Acme-CPANAuthors-Booking.git>.
 
 =head1 AUTHOR
 
-Abigail, L<< mailto:cpan@abigail.be >>.
+Originally written by Abigail, L<< mailto:cpan@abigail.be >>.
+Now maintained by Philippe Bruhat (BooK), L<< mailto:book@cpan.org >>.
 
-=head1 COPYRIGHT and LICENSE
+=head1 COPYRIGHT
 
 Copyright (C) 2010, 2011, 2012 by Abigail.
+Copyright (C) 2012 by Philippe Bruhat (BooK).
+Copyright (C) 2010-2014 by Dennis Kaarsemaker.
+
+=head1 LICENSE
 
 Permission is hereby granted, free of charge, to any person obtaining a
-copy of this software and associated documentation files (the "Software"),   
+copy of this software and associated documentation files (the "Software"),
 to deal in the Software without restriction, including without limitation
 the rights to use, copy, modify, merge, publish, distribute, sublicense,
 and/or sell copies of the Software, and to permit persons to whom the
@@ -118,7 +141,7 @@ THE SOFTWARE.
 
 =head1 INSTALLATION
 
-To install this module, run, after unpacking the tar-ball, the 
+To install this module, run, after unpacking the tar-ball, the
 following commands:
 
    perl Makefile.PL
