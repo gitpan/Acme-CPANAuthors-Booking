@@ -5,68 +5,83 @@ use strict;
 use warnings;
 no  warnings 'syntax';
 
-our $VERSION = '2014031502';
+our $VERSION = '2014032801';
 
 use Acme::CPANAuthors::Register (
-    AVAR          =>   "\x{C6}var Arnfj\x{F6}r\x{F0} Bjarmason",
+    ABCDEFGH      =>   "poddar (Amit Poddar)",
+    ALEXT         =>   "Alex Timoshenko",                # ID exists, but no modules
+    AVAR          =>   "\x{c6}var Arnfj\x{f6}r\x{f0} Bjarmason (AEvar Arnfjord Bjarmason)",
     BLHOTSKY      =>   "Brad Lhotsky",
     BLOM          =>   "Menno Blom",
     BOOK          =>   "Philippe Bruhat (BooK)",
     BRUNORC       =>   "Bruno Czekay",
-#   BUCCIA        =>   "Fernando Vezzosi",        # ID exists, but no modules
-    BURAK         =>   "Burak G\x{FC}rsoy",
-    CADAVIS       =>   "Chad A. Davis",
-    CAIO          =>   "Caio Rom\x{E3}o Costa Nascimento",
-#   CANECA        =>   "Matheus Victor Brum Soares", # ID exists, but no modules
-#   CHE           =>   "Andrey Shpachenko",
+    BUCCIA        =>   "Fernando Vezzosi",               # ID exists, but no modules
+    BURAK         =>   "Burak G\x{fc}rsoy (Burak Gursoy)",
+    CADAVIS       =>   "Chad A Davis",
+    CAIO          =>   "Caio Rom\x{e3}o Costa Nascimento (Caio Romao Costa Nascimento)",
+    CANECA        =>   "Matheus Victor Brum Soares",     # ID exists, but no modules
+    CGARCIA       =>   "Claudio Garcia",
+    CHE           =>   "Andrey Shpachenko",              # ID exists, but no modules
     DAMOG         =>   "David Moreno",
     DAMS          =>   "Damien Krotkine",
     DEEPAKG       =>   "Deepak Gulati",
+    DGRYSKI       =>   "Damian Gryski",
     DMOR          =>   "David Morel",
-    FGLOCK        =>   "Fl\x{E1}vio Soibelmann Glock",
-#   FREEMANSR     =>   "Mihajlo An\x{0111}elkovi\x{0107}", # ID exists, but no modules
+    EHERMAN       =>   "Eric Herman",
+    FARO          =>   "Tiago Faro Pedroso",             # ID exists, but no modules
+    FGLOCK        =>   "Fl\x{e1}vio Soibelmann Glock (Flavio Soibelmann Glock)",
+    FREEMANSR     =>   "Mihajlo An\x{111}elkovi\x{107}", # ID exists, but no modules
     GGOUDSMIT     =>   "Gilion Goudsmit",
     GRBHAT        =>   "Gurunandan Bhat",
-    GUGOD         =>   "\x{5289}\x{5EB7}\x{6C11} (Liu Kang Min)",
+    GUGOD         =>   "\x{5289}\x{5eb7}\x{6c11} (Liu Kang Min)",
     HERALDB       =>   "Herald van der Breggen",
-    HINRIK        =>   "Hinrik \x{D6}rn Sigur\x{F0}sson",
-#   HPETERS       =>   "Huub Peters",             # ID exists, but no modules
-#   IFTEKHAR      =>   "Iftekharul Haque",        # ID exists, but no modules
-#   IKRUGLOV      =>   "Ivan Kruglov",            # ID exists, but no modules
-#   JACKDOE       =>   "Borislav Nikolov",        # ID exists, but no modules
-#   JALEVIN       =>   "Jospeh A. Levin",         # ID exists, but no modules
+    HINRIK        =>   "Hinrik \x{d6}rn Sigur\x{f0}sson (Hinrik Orn Sigurdsson)",
+    HPETERS       =>   "Huub Peters",                    # ID exists, but no modules
+    IFTEKHAR      =>   "Iftekharul Haque",               # ID exists, but no modules
+    IKRUGLOV      =>   "Ivan Kruglov",                   # ID exists, but no modules
+    IPAPONOV      =>   "Ivan Paponov",                   # ID exists, but no modules
+    JACKDOE       =>   "borislav nikolov",               # ID exists, but no modules
+    JALEVIN       =>   "Joseph A. Levin",                # ID exists, but no modules
     JANUS         =>   "Simon Bertrang",
     JGDA          =>   "Jonas Galhordas Duarte Alves",
+    KATOORU       =>   "karthik katooru",                # ID exists, but no modules
     KOMAROV       =>   "Oleg Komarov",
-#   MALANDER      =>   "Ryan Bastic",             # ID exists, but no modules
+    KSURI         =>   "\x{410}\x{43b}\x{435}\x{43a}\x{441}\x{435}\x{439} \x{421}\x{443}\x{440}\x{438}\x{43a}\x{43e}\x{432} (Alexey Surikov)",
+    MALANDER      =>   "Ryan Bastic",                    # ID exists, but no modules
     MATTK         =>   "Matt Koscica",
+    MAZE          =>   "Wijnand Modderman-Lenstra",      # ID exists, but no modules
     MBARBON       =>   "Mattia Barbon",
     MET           =>   "Quim Rovira",
+    MICKEY        =>   "Micha Nasriachi",
     MSANTOS       =>   "Marco Santos",
     MSILVA        =>   "Mario Silva",
-    MVUETS        =>   "Maxim Vuets",
+    MVUETS        =>   "\x{41c}\x{430}\x{43a}\x{441}\x{438}\x{43c} \x{412}\x{443}\x{435}\x{446} (Maxim Vuets)",# ID exists, but no modules
     NEVES         =>   "Marco Neves",
     NPEREZ        =>   "Nicholas Perez",
-#   PJIRAK        =>   "Peter Jirak",             # ID exists, but no modules
+    PJIRAK        =>   "Peter Jirak",                    # ID exists, but no modules
     POTYL         =>   "Emmanuel Rodriguez",
-    RGARCIA       =>   "Rafa\x{EB}l Garcia-Suarez",
+    PPATTHAR      =>   "Pavan Patthar",                  # ID exists, but no modules
+    RGARCIA       =>   "Rafa\x{eb}l Garcia-Suarez (Rafael Garcia-Suarez)",
     SEVEAS        =>   "Dennis Kaarsemaker",
-#   SILVAN        =>   "Silvan Kok",              # ID exists, but no modules
+    SILVAN        =>   "Silvan Kok",                     # ID exists, but no modules
     SLANNING      =>   "Scott Lanning",
-    SMUELLER      =>   "Steffen M\x{FC}ller",
-#   STEFANB       =>   "Stefan Boronea",          # ID exists, but no modules
+    SMUELLER      =>   "Steffen M\x{fc}ller (Steffen Mueller)",
+    STEFANB       =>   "Stefan Boronea",                 # ID exists, but no modules
     STRANGE       =>   "Luciano Miguel Ferreira Rocha",
-    SYP           =>   "\x{0421}\x{0442}\x{0430}\x{043D}\x{0438}\x{0441}\x{043B}\x{0430}\x{0432} \x{041F}\x{0443}\x{0441}\x{0435}\x{043F}",
+    SYP           =>   "\x{421}\x{442}\x{430}\x{43d}\x{438}\x{441}\x{43b}\x{430}\x{432} \x{41f}\x{443}\x{441}\x{435}\x{43f} (Stanislaw Pusep)",
+    TECHCODE      =>   "Aleksandar Petrovi\x{107} (Aleksandar Petrovic)",
     TJMC          =>   "Tomasz Czepiel",
-#   VMIKULIC      =>   "Vedran Mikulic",          # ID exists, but no modules
+    TJUGO         =>   "Jose Mtanous",                   # ID exists, but no modules
+    TSBRIGGS      =>   "Thomas Stewart Briggs",          # ID exists, but no modules
+    VMIKULIC      =>   "Vedran Mikulic",                 # ID exists, but no modules
     XANT          =>   "Andrea Guzzo",
     XSAWYERX      =>   "Sawyer X",
-    YKO           =>   "\x{042F}\x{0440}\x{043E}\x{0441}\x{043B}\x{0430}\x{0432} \x{041A}\x{043E}\x{0440}\x{0448}\x{0430}\x{043A}",
+    YKO           =>   "\x{42f}\x{440}\x{43e}\x{441}\x{43b}\x{430}\x{432} \x{41a}\x{43e}\x{440}\x{448}\x{430}\x{43a} (Yaroslav Korshak)",
+    YURAN         =>   "Nevinitsin Yury",
     YVES          =>   "Yves",
-    YURAN         =>   "Yury Nevinitsin",
 );
 
-14656;
+15284;
 
 __END__
 
@@ -100,7 +115,7 @@ As soon as Booking.com hires a new CPAN author, this module is out of date.
 
 =head1 COMMERCIAL BREAK
 
-Booking.com is hiring. Send your resume to L<< mailto:work@booking.com >>
+Booking.com is hiring. Send your resume to L<work@booking.com>
 if you are interested.
 
 =head1 DEVELOPMENT
@@ -110,8 +125,8 @@ L<git://github.com/book/Acme-CPANAuthors-Booking.git>.
 
 =head1 AUTHOR
 
-Originally written by Abigail, L<< mailto:cpan@abigail.be >>.
-Now maintained by Philippe Bruhat (BooK), L<< mailto:book@cpan.org >>.
+Originally written by Abigail, L<cpan@abigail.be>.
+Now maintained by Philippe Bruhat (BooK), L<book@cpan.org>.
 
 =head1 COPYRIGHT
 
