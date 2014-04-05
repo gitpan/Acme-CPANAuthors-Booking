@@ -5,7 +5,7 @@ use strict;
 use warnings;
 no  warnings 'syntax';
 
-our $VERSION = '2014032801';
+our $VERSION = '2014040501';
 
 use Acme::CPANAuthors::Register (
     ABCDEFGH      =>   "poddar (Amit Poddar)",
@@ -37,6 +37,7 @@ use Acme::CPANAuthors::Register (
     HERALDB       =>   "Herald van der Breggen",
     HINRIK        =>   "Hinrik \x{d6}rn Sigur\x{f0}sson (Hinrik Orn Sigurdsson)",
     HPETERS       =>   "Huub Peters",                    # ID exists, but no modules
+    HUGMEIR       =>   "Brian Fraser",
     IFTEKHAR      =>   "Iftekharul Haque",               # ID exists, but no modules
     IKRUGLOV      =>   "Ivan Kruglov",                   # ID exists, but no modules
     IPAPONOV      =>   "Ivan Paponov",                   # ID exists, but no modules
@@ -52,15 +53,15 @@ use Acme::CPANAuthors::Register (
     MAZE          =>   "Wijnand Modderman-Lenstra",      # ID exists, but no modules
     MBARBON       =>   "Mattia Barbon",
     MET           =>   "Quim Rovira",
-    MICKEY        =>   "Micha Nasriachi",
+    MICKEY        =>   "Mickey Nasriachi",
     MSANTOS       =>   "Marco Santos",
     MSILVA        =>   "Mario Silva",
     MVUETS        =>   "\x{41c}\x{430}\x{43a}\x{441}\x{438}\x{43c} \x{412}\x{443}\x{435}\x{446} (Maxim Vuets)",# ID exists, but no modules
     NEVES         =>   "Marco Neves",
     NPEREZ        =>   "Nicholas Perez",
-    PJIRAK        =>   "Peter Jirak",                    # ID exists, but no modules
     POTYL         =>   "Emmanuel Rodriguez",
     PPATTHAR      =>   "Pavan Patthar",                  # ID exists, but no modules
+    PSILVA        =>   "Pedro Silva",
     RGARCIA       =>   "Rafa\x{eb}l Garcia-Suarez (Rafael Garcia-Suarez)",
     SEVEAS        =>   "Dennis Kaarsemaker",
     SILVAN        =>   "Silvan Kok",                     # ID exists, but no modules
@@ -77,11 +78,10 @@ use Acme::CPANAuthors::Register (
     XANT          =>   "Andrea Guzzo",
     XSAWYERX      =>   "Sawyer X",
     YKO           =>   "\x{42f}\x{440}\x{43e}\x{441}\x{43b}\x{430}\x{432} \x{41a}\x{43e}\x{440}\x{448}\x{430}\x{43a} (Yaroslav Korshak)",
-    YURAN         =>   "Nevinitsin Yury",
     YVES          =>   "Yves",
 );
 
-15284;
+15540;
 
 __END__
 
@@ -116,12 +116,12 @@ As soon as Booking.com hires a new CPAN author, this module is out of date.
 =head1 COMMERCIAL BREAK
 
 Booking.com is hiring. Send your resume to L<work@booking.com>
-if you are interested.
+if you are interested. See also L<https://www.booking.com/jobs/>
 
 =head1 DEVELOPMENT
 
 The current sources of this module are found on github,
-L<git://github.com/book/Acme-CPANAuthors-Booking.git>.
+L<http://github.com/book/Acme-CPANAuthors-Booking/>.
 
 =head1 AUTHOR
 
