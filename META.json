@@ -54,7 +54,7 @@
          "url" : "http://github.com/book/Acme-CPANAuthors-Booking.git"
       }
    },
-   "version" : "2014090301",
+   "version" : "2014101101",
    "x_test_requires" : {
       "Acme::CPANAuthors" : 0,
       "Test::More" : 0.88,
